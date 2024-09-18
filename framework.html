@@ -4,10 +4,299 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="favicon" url="">
+    <link rel="stylesheet" href="mediaqueries.css">
     <title>Denniel's Portfolio</title>
 </head>
 <body>
-    
+    <nav id="front-nav">
+        <div class="name">Denniel Cabanizas</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#second">About</a></li>
+                <li><a href="#third">Experience</a></li>
+                <li><a href="#fourth">Projects</a></li>
+                <li><a href="#fifth">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="details-nav">
+        <div class="name">Denniel Cabanizas</div>
+        <div class="details-menu">
+            <div class="details-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#second" onclick="toggleMenu()">About</a></li>
+                <li><a href="#third" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#fourth" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#fifth" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="first">
+        <div class="pic">
+            <img src="assets/profile.png" alt="Denniel Cabanizas Picture">
+        </div>
+        <div class="pic_text">
+            <p class="pic_text_p">Hello, I'm</p>
+            <h1 class="pic_name">Denniel Cabanizas</h1>
+            <p class="pic_text_p2">Freelancer | Full Stack Developer</p>
+            <div class="pic_btn">
+                <button 
+                class="picb btn_color" 
+                onclick="window.open('./assets/resume.cabanizas.pdf')">
+                    DownloadCV
+                </button>
+                <button 
+                class="picb btn_color2" 
+                onclick="location.href='#fifth'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" 
+                class="icon" onclick="location.href='https://www.linkedin.com/in/denniel-john-cabanizas-74957b322/'">
+                <img src="./assets/github.png" alt="My Github Profile" 
+                class="icon" onclick="location.href='https://github.com/cabanizas-denniel'">
+            </div>
+        </div>
+    </section>
+    <section id="second">
+        <p class="pic_text_p">Get to Know More</p>
+        <h1 class="pic_name">About Me</h1>
+        <div class="section-container">
+            <div class="pic">
+                <img src="./assets/second-pic.png" alt="Profile" 
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon"
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>3+ Months <br>Freelancing</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelor's Degree<br>Computer Science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione facilis quasi beatae alias exercitationem saepe nulla autem voluptas perspiciatis sed? Reprehenderit eligendi nisi tempora odit, ea explicabo esse ab atque.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione facilis quasi beatae alias exercitationem saepe nulla autem voluptas perspiciatis sed? Reprehenderit eligendi nisi tempora odit, ea explicabo esse ab atque.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione facilis quasi beatae alias exercitationem saepe nulla autem voluptas perspiciatis sed? Reprehenderit eligendi nisi tempora odit, ea explicabo esse ab atque.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='#third'">
+    </section>
+    <section id="third">
+        <p class="pic_text_p">Explore My</p>
+        <h1 class="pic_name">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Freelancing</h2>    
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Graphic Designing</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Social Media Management</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Video Editing</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Bookkeeping</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Appointment Setting</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Data Entrying</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Full-Stack Development</h2>    
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>C</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>JS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='#fourth'">
+    </section>
+    <section id="fourth">
+        <p class="pic_text_p">Browse My Recent</p>
+        <h1 class="pic_name">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="Project 1"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="pic_btn">
+                    <button class="picb btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">
+                    Github
+                    </button>
+                    <button class="picb btn-color-2 project-btn" 
+                    onclick="location.href='#first'">
+                    Live Demo
+                    </button>
+            </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Project 2"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <div class="pic_btn">
+                    <button class="picb btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">
+                    Github
+                    </button>
+                    <button class="picb btn-color-2 project-btn" 
+                    onclick="location.href='#first'">
+                    Live Demo
+                    </button>
+            </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.png" alt="Project 3"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project Three</h2>
+                <div class="pic_btn">
+                    <button class="picb btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">
+                    Github
+                    </button>
+                    <button class="picb btn-color-2 project-btn" 
+                    onclick="location.href='#first'">
+                    Live Demo
+                    </button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='#fifth'">
+    </section>
+    <section id="fifth">
+        <p class="pic_text_p">Get in Touch</p>
+        <h1 class="pic_name">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email Icon"
+                class="icon contact-icon email">
+                <p><a href="mailto:cabanizas.denniel@gmail.com">cabanizas.denniel@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Icon"
+                class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/denniel-john-cabanizas-74957b322/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#second">About</a></li>
+                    <li><a href="#third">Experience</a></li>
+                    <li><a href="#fourth">Projects</a></li>
+                    <li><a href="#fifth">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Cabanizas Denniel. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
